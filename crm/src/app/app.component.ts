@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crm';
+  name:string = "sam";
+  age:number= 24;
+
+  city(){
+    return 'chennai';
+  }
+
+  isDisabled:boolean = false;
 }
