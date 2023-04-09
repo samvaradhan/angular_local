@@ -15,4 +15,26 @@ export class AppComponent {
   }
 
   isDisabled:boolean = false;
+
+  name1:string= "sam";
+
+  change(){
+    this.name1 ="SJ";
+  }
+
+  status: string ="enter name" ;
+
+  changes(){
+    this.status ="name entered";
+  }
+
+  name2: string ="sam";
+
+  name3: string ="";
+  text: string = "hey!! You haven't added the content"
+
+  changed(){
+    this.text ="Your content is "+this.name3;
+  }
+
 }

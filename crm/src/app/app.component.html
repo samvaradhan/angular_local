@@ -6,3 +6,15 @@
 <br>
 
 <button class="btn btn-success" [disabled]="isDisabled">hey george</button>
+<br>
+<button class="btn btn-success" (click)="change()">see changes on click</button>
+{{name1}}
+
+<p>{{status}} : <input type="text" (input)="changes()"></p>
+
+<p><input type="text" [(ngModel)]="name2" name2="text"></p>
+{{name2}}
+<br>
+<input type="text" [(ngModel)]="name3" name3="text">
+<button class="btn btn-success" [disabled]="name3=== ''" (click)="changed()"> Submit</button>
+<p>{{text}}</p>
