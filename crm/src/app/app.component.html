@@ -1,20 +1,57 @@
 <app-header></app-header>
+
+<!-- string interpolation -->
 {{name}}
 {{age}}
-
 {{city()}}
 <br>
 
+
+<!-- property binding -->
 <button class="btn btn-success" [disabled]="isDisabled">hey george</button>
 <br>
+
+<!-- event binding -->
 <button class="btn btn-success" (click)="change()">see changes on click</button>
 {{name1}}
 
+<!-- Two way data binding -->
 <p>{{status}} : <input type="text" (input)="changes()"></p>
 
 <p><input type="text" [(ngModel)]="name2" name2="text"></p>
 {{name2}}
 <br>
+
 <input type="text" [(ngModel)]="name3" name3="text">
 <button class="btn btn-success" [disabled]="name3=== ''" (click)="changed()"> Submit</button>
 <p>{{text}}</p>
+
+
+
+
+<!-- pipes -->
+<p>{{names}}</p>
+
+after converting to lowercase
+<p>{{names | lowercase}}</p>
+
+<p>{{names1}}</p>
+
+after converting to uppercase
+<p>{{names1 | uppercase}}</p>
+
+
+<p>{{nowdate}}</p>
+
+after conerting to required format
+<p>{{nowdate | date:'shortDate'}}</p>
+
+
+{{value | currency:'INR'}}
+<br>
+{{value | currency:'USD'}}
+<br>
+
+<p>{{PERCENTVALUE | percent}}</p>
+
+<p>{{decvalue | number: '3.2-4'}}</p>
