@@ -5,11 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { SquarerootPipe } from './pipes/squareroot.pipe';
+import { CurrencyConversionPipe, TextjoinPipe } from './pipes/currency-conversion.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SquarerootPipe,
+    CurrencyConversionPipe,
+    TextjoinPipe
   ],
   imports: [
     BrowserModule,

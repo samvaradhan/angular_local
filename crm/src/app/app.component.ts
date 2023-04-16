@@ -53,4 +53,17 @@ export class AppComponent {
   value: number = 300;
   PERCENTVALUE:number =0.0278;
   decvalue = "12.00056";
+  
+  //JSON pipes
+  user ={name: "SJ", age: 24}
+
+  //custom pipes
+  num:number=0
+  // num2= Number(this.num)
+
+  money:number=0
+  num3:number=0
+
+  first_name:string ="";
+  second_name:string="";
 }

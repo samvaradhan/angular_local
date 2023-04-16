@@ -55,3 +55,28 @@ after conerting to required format
 <p>{{PERCENTVALUE | percent}}</p>
 
 <p>{{decvalue | number: '3.2-4'}}</p>
+
+<!-- JSON pipes -->
+<p>{{user}}</p>
+<p>{{user | json}}</p>
+<p>{{user.name}}</p>
+<p>{{user | json | lowercase}}</p>
+
+<!-- custom pipes --> 
+<p>enter a number <input type="number" placeholder="enter a value" [(ngModel)]="num" num="number"></p>
+<p>{{num}}</p>
+sqrt value :{{num | squareroot}}
+<br>
+<!-- {{num2}}
+{{num2 | squareroot}} -->
+<br>
+
+<p>enter your amount <input type="number" placeholder="enter amount" [(ngModel)]="money" money="number"></p>
+<p>enter conversion value  <input type="number" placeholder="enter conversion rate" [(ngModel)]="num3" num3="number"></p>
+
+<p>Entered amount:{{money | currency}}</p>
+<p>Converted to local currency:{{money | currencyConversion:num3}}</p>
+
+<p>enter your first_name <input type="text" placeholder="enter first_name" [(ngModel)]="first_name" first_name="text"></p>
+<p>enter your second_name <input type="text" placeholder="enter second_name" [(ngModel)]="second_name" second_name="text"></p>
+<p>{{first_name | textjoin:second_name }}</p>
