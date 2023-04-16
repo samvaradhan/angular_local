@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crm';
+
+  // string interpolation
   name:string = "sam";
   age:number= 24;
 
@@ -14,16 +16,21 @@ export class AppComponent {
     return 'chennai';
   }
 
+
+  // property binding
   isDisabled:boolean = false;
 
   name1:string= "sam";
 
+
+
+  // event binding
   change(){
     this.name1 ="SJ";
   }
 
+  // Two way data binding
   status: string ="enter name" ;
-
   changes(){
     this.status ="name entered";
   }
@@ -37,4 +44,13 @@ export class AppComponent {
     this.text ="Your content is "+this.name3;
   }
 
+
+  // pipes
+  names: string ="SJ";
+
+  names1: string ="sam";
+  nowdate = Date();
+  value: number = 300;
+  PERCENTVALUE:number =0.0278;
+  decvalue = "12.00056";
 }
