@@ -80,3 +80,44 @@ sqrt value :{{num | squareroot}}
 <p>enter your first_name <input type="text" placeholder="enter first_name" [(ngModel)]="first_name" first_name="text"></p>
 <p>enter your second_name <input type="text" placeholder="enter second_name" [(ngModel)]="second_name" second_name="text"></p>
 <p>{{first_name | textjoin:second_name }}</p>
+
+<!-- structural directives -->
+<!-- *nfIf -->
+<h3>ngIf</h3>
+<!-- <p *ngIf = "inputt; else elseblock">trueblock</p> -->
+<p *ngIf = "inputt; then thenblock; else elseblock"></p>
+
+<ng-template #thenblock>
+    trueblock
+</ng-template>
+
+<ng-template #elseblock>
+    false block
+</ng-template>
+
+<!-- structural directives -->
+<!-- *nfFor -->
+<h3>ngFor</h3>
+<ul>
+    <li *ngFor = "let x of users">
+        {{x}}
+
+    </li>
+</ul>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S.no</th>
+        <th scope="col">Title</th>
+        <th scope="col">Actor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let y of movies; let i = index" >
+        <td>{{i+1}}</td>
+        <td>{{y.title}}</td>
+        <td>{{y.actor}}</td>
+      </tr>
+    </tbody>
+  </table>

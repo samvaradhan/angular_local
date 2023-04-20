@@ -66,4 +66,17 @@ export class AppComponent {
 
   first_name:string ="";
   second_name:string="";
+
+  //structural directives 
+  //*nfIf 
+  inputt:boolean=false;
+
+    //structural directives 
+  //*nfFor
+  
+  users =["SJ", "SAM", "VARADHAN", "HARI"]
+  movies=[{title:"tom & jerry", actor: "tom"},
+          {title:"oody & cockroach", actor: "oogy"},
+          {title:"mottu patlu", actor: "mottu"},
+          {title:"Ninja Hattori", actor: "hattori"}];
 }
