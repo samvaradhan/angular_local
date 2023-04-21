@@ -79,4 +79,22 @@ export class AppComponent {
           {title:"oody & cockroach", actor: "oogy"},
           {title:"mottu patlu", actor: "mottu"},
           {title:"Ninja Hattori", actor: "hattori"}];
+
+
+      
+ 
+ //ngSwitchCase
+numa:number = 8
+
+
+//attribute directives
+//ngStyle
+color:string='red'
+
+
+
+
+
+
 }
+
