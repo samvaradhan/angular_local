@@ -121,3 +121,42 @@ sqrt value :{{num | squareroot}}
       </tr>
     </tbody>
   </table>
+
+
+<!-- ngSwitchCase -->
+<div [ngSwitch] ="numa">
+<p *ngSwitchCase=0>white</p>
+<p *ngSwitchCase=1>green</p>
+<p *ngSwitchCase=2>red</p>
+<p *ngSwitchCase=3>orange</p>
+<p *ngSwitchDefault>black</p>
+</div> 
+
+
+<!-- ngStyle -->
+<h2 [ngStyle]="{color:color}">NGSTYLE</h2>
+<ul>
+  <li *ngFor = "let y of movies" [ngStyle]="{color :y.actor==='tom' ? 'blue' :'orange'}">
+      {{y.title }} ==  {{y.actor }}
+
+  </li>
+</ul>
+
+
+<!-- ngClass -->
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">S.no</th>
+      <th scope="col">Title</th>
+      <th scope="col">Actor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let y of movies; let i = index; let o = odd; let e = even" [ngClass]="{'bg-danger':o, 'bg-info':e}" >
+      <td>{{i+1}}</td>
+      <td>{{y.title}}</td>
+      <td>{{y.actor}}</td>
+    </tr>
+  </tbody>
+</table>
