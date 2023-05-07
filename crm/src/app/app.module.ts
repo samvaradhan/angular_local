@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { SquarerootPipe } from './pipes/squareroot.pipe';
 import { CurrencyConversionPipe, TextjoinPipe } from './pipes/currency-conversion.pipe';
+import { UserComponent } from './user/user.component';
+import { User1Component } from './user1/user1.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CurrencyConversionPipe, TextjoinPipe } from './pipes/currency-conversio
     HeaderComponent,
     SquarerootPipe,
     CurrencyConversionPipe,
-    TextjoinPipe
+    TextjoinPipe,
+    UserComponent,
+    User1Component
   ],
   imports: [
     BrowserModule,

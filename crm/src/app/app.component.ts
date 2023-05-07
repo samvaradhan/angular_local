@@ -91,10 +91,23 @@ numa:number = 8
 //ngStyle
 color:string='red'
 
+//INPUT DECORATOR
+
+user_array = [{name: 'sam', email: 'sam@mail.com'},
+              {name: 'sj', email: 'sj@mail.com'},
+              {name: 'ram', email: 'ram@mail.com'}
+              ]
 
 
+//OUTPUT Decorator
 
-
+name11!:string
+age11!: number
+receive(data:any){
+  this.name11=data.name
+  this.age11=data.age
+}
 
 }
+
 

@@ -160,3 +160,14 @@ sqrt value :{{num | squareroot}}
     </tr>
   </tbody>
 </table>
+
+
+
+<!-- INPUT DECORATOR -->
+<p *ngFor="let z of user_array">
+  <app-user [item]="z"></app-user>
+</p>
+
+<app-user1></app-user1>
+<app-user1 (neweve)="receive($event)"></app-user1>
+<p>{{name11}} | {{age11}}</p>
