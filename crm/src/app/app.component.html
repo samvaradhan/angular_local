@@ -171,3 +171,29 @@ sqrt value :{{num | squareroot}}
 <app-user1></app-user1>
 <app-user1 (neweve)="receive($event)"></app-user1>
 <p>{{name11}} | {{age11}}</p>
+
+<!-- NgForms -->
+<form action="" #registerform="ngForm" (submit)="Onsubmit(registerform)">
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Example label</label>
+    <input type="text" name="name1" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" ngModel>
+  </div>
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Another label</label>
+    <input type="text" name="sname" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder" ngModel>
+  </div>
+
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">name</label>
+    <select id="inputState" class="form-select" name="country" ngModel>
+      <option selected>Choose...</option>
+      <option value="{{x.id}}" *ngFor="let x of country">{{x.name}}</option>
+    </select>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">submit</button>
+  </div>
+</form>

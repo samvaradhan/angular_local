@@ -108,6 +108,16 @@ receive(data:any){
   this.age11=data.age
 }
 
+country:any=[
+  {id: 1, name:"sam" },
+  {id: 2, name:"SJ" },
+  {id: 3, name:"SV" }
+]
+
+Onsubmit(data:any){
+  console.log(data)
+}
+
 }
 
 
